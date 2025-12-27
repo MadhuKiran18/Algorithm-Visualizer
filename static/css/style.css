@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #1558b0;
+}
+
+/* Sorting Bars */
+.bar {
+    width: 20px;
+    margin: 2px;
+    background: #1a73e8;
+    display: inline-block;
+    transition: height 0.3s ease;
+}
+
+/* Pathfinding Grid */
+.cell {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+.wall { background: #000; }
+.visited { background: #90caf9; transition: 0.3s; }
+.path { background: #4caf50; }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="container">
+
+    <h1>Algorithm Visualizer</h1>
+
+    <div class="card">
+        <h2>Sorting Algorithms</h2>
+        <input id="arrayInput" placeholder="5,3,8,2">
+        <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="merge">Merge Sort</option>
+        </select>
+        <button onclick="startSort()">Visualize</button>
+        <div id="bars"></div>
+        <script src="{{ url_for('static', filename='css/js/visualize.js') }}"></script>
+    </div>
+
+    <div class="card">
+        <h2>Graph Traversal</h2>
+        <textarea id="graphInput" placeholder='{"A":["B","C"],"B":["D"],"C":[],"D":[]}'></textarea>
+        <input id="startNode" placeholder="Start Node">
+        <select id="graphAlgo">
+            <option value="bfs">BFS</option>
+            <option value="dfs">DFS</option>
+        </select>
+        <button onclick="startGraph()">Visualize</button>
+        <div id="graphResult"></div>
+        <script src="{{ url_for('static', filename='css/js/visualize.js') }}"></script>
+    </div>
+
+    <div class="card">
+        <h2>Tree Traversal</h2>
+        <input id="treeInput" placeholder="1,2,3,4,5">
+        <select id="treeAlgo">
+            <option value="inorder">Inorder</option>
+            <option value="preorder">Preorder</option>
+            <option value="postorder">Postorder</option>
+        </select>
+        <button onclick="startTree()">Visualize</button>
+        <div id="treeResult"></div>
+        <script src="{{ url_for('static', filename='css/js/visualize.js') }}"></script>
+    </div>
+
+    <div class="card">
+        <h2>A* Pathfinding</h2>
+        <textarea id="gridInput" placeholder="[[0,0],[0,0]]"></textarea>
+        <input id="startCell" placeholder="Start (r,c)">
+        <input id="endCell" placeholder="End (r,c)">
+        <button onclick="startPathfinding()">Visualize</button>
+        <div id="grid"></div>
+        <script src="{{ url_for('static', filename='css/js/visualize.js') }}"></script>
+    </div>
+
+</div>
+</body>
+</html>
