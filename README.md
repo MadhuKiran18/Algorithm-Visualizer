@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Project preview: http://127.0.0.1:5000/
+=======
+Project preview:  http://127.0.0.1:5000/
+>>>>>>> 3ba0ed7c2aa2680954b9e33e3df0e676463e185c
 
 # Algorithm Visualizer
 
